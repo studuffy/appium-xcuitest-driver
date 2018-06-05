@@ -16,7 +16,6 @@ describe('XCUITestDriver - perfomance', function () {
   describe('record performance metrics', function () {
     before(async function () {
       driver = await initSession(UICATALOG_CAPS);
-      driver.relaxedSecurityEnabled = true;
     });
     after(async function () {
       await deleteSession();

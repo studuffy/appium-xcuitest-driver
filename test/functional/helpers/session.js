@@ -24,7 +24,7 @@ async function initDriver () {
 }
 
 async function initServer () {
-  server = await startServer(PORT, HOST);
+  server = await startServer(PORT, HOST, true);
 }
 
 async function initWDA (caps) {
